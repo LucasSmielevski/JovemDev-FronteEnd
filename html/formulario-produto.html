@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+
+<body>
+    <h1>Cadastro de Produtos</h1>
+    <hr>
+    <form action="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome">
+        </div>
+        <br>
+        <div>
+            <label for="idade">Código de Barra</label>
+            <input type="number" name="codigo-barra">
+        </div>
+        <br>
+        <div>
+            <label for="idade">Quantidade</label>
+            <input type="number" name="quantidade">
+        </div>
+        <br>
+        <div>
+            <label for="data-recebimento">Data de recebimento</label>
+            <input type="date" name="data-recebimento">
+        </div>
+        <br>
+        <div>
+            <label for="tipo">Tipo</label>
+            <select name="tipo">
+                <option value="vazio"></option>
+                <option value="carne">Carne</option>
+                <option value="frango">Frango</option>
+                <option value="peixe">Peixe</option>
+                <option value="porco">Porco</option>
+                <option value="carneiro">Carneiro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="fornecedor">Fornecedor</label>
+            <select name="fornecedor">
+                <option value="vazio"></option>
+                <option value="fazenda-1">Fazenda 1</option>
+                <option value="fazenda-2">Fazenda 2</option>
+                <option value="fazenda-3">Fazenda 3</option>
+                <option value="best-beef">Best Beef</option>
+                <option value="sadia">Sadia</option>
+                <option value="seara">Seara</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="fresco">Fresco</label>
+            <input type="radio" name="estado-produto" value="fresco">
+            <label for="congelado">Congelado</label>
+            <input type="radio" name="estado-produto" value="congelado">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Enviar</button>
+            <a href="/produtos.html">Listagem de Produtos</a>
+            <br>
+            <br>
+            <a href="/menu.html">Voltar Menu</a>
+        </div>
+    </form>
+</body>
+
+</html>
