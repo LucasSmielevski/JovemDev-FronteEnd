@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+ul, a ,h3{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: tomato;
+    height: 15px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-right: 20px;
+}
+
+.menu li , a:hover{
+    color: black;
+}
+
+/*Content*/
+
+div{
+    height: 50px;
+    width: 50px;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-1 {
+    background-color: aqua;
+}
+
+.div-2 {
+    background-color: red;
+}
+
+.div-3 {
+    background-color: purple;
+}
+
+.div-4 {
+    background-color: chartreuse;
+}
+
+.div-5 {
+    background-color: blue;
+}
+
+.div-6 {
+    background-color: red;
+}
+
+.div-7 {
+    background-color: purple;
+}
+
+.div-8 {
+    background-color: chartreuse;
+}

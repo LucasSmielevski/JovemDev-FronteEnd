@@ -1,4 +1,40 @@
-h1{
+* {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    height: 50px;
+}
+
+h1 {
     text-align: center;
     margin-top: 15px;
+}
+
+.section {
+    display: flex;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    background-color: gray;
+}
+
+.main-menu button {
+    height: 15%;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 5px 5px 2px rgb(48, 48, 48);
+    border: none;
+}
+
+.main-menu button:hover {
+    background-color: rgb(184, 184, 184);
 }

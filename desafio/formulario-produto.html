@@ -7,88 +7,98 @@
     <title>Cadastro de Produtos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/formulario-produto.css">
+    <link rel="stylesheet" href="/css/formulario-produto.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Produtos</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/desafio/menu.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/desafio/formulario-produto.html">Cadastro Produtos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/desafio/produtos.html">Lista Produtos</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Produtos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/desafio/menu.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/desafio/formulario-produto.html">Cadastro Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/desafio/produtos.html">Lista Produtos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <h1 class="titulo">Cadastro de Produtos</h1>
-    <hr>
+    <section class="section">
+        <div class="main-menu">
+            <button>Cadastro de usuário</button>
+            <button>Listagem de usuário</button>
+            <button>Menu Principal</button>
+        </div>
+        <div class="content">
+            <h1 class="titulo">Cadastro de Produtos</h1>
 
-    <form class="row g-3">
-        <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Quantidade</label>
+                    <input type="number" class="form-control" id="quantidade">
+                </div>
+                <div class="col-8">
+                    <label for="inputAddress" class="form-label">Codigo de Barra</label>
+                    <input type="number" class="form-control" id="codigo-barra">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label">Data do Recebimento</label>
+                    <input type="date" class="form-control" id="data-recebimento">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Tipo</label>
+                    <select id="inputState" class="form-select">
+                        <option value="vazio"></option>
+                        <option value="carne">Carne</option>
+                        <option value="frango">Frango</option>
+                        <option value="peixe">Peixe</option>
+                        <option value="porco">Porco</option>
+                        <option value="carneiro">Carneiro</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Fornecedor</label>
+                    <select id="inputState" class="form-select">
+                        <option value="vazio"></option>
+                        <option value="fazenda-1">Fazenda 1</option>
+                        <option value="fazenda-2">Fazenda 2</option>
+                        <option value="fazenda-3">Fazenda 3</option>
+                        <option value="best-beef">Best Beef</option>
+                        <option value="sadia">Sadia</option>
+                        <option value="seara">Seara</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Estado do Produto</label>
+                    <select id="inputState" class="form-select">
+                        <option value="vazio"></option>
+                        <option value="fresco">Fresco</option>
+                        <option value="congelado">Congelado</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
         </div>
-        <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Quantidade</label>
-            <input type="number" class="form-control" id="quantidade">
-        </div>
-        <div class="col-8">
-            <label for="inputAddress" class="form-label">Codigo de Barra</label>
-            <input type="number" class="form-control" id="codigo-barra">
-        </div>
-        <div class="col-md-4">
-            <label for="inputCity" class="form-label">Data do Recebimento</label>
-            <input type="date" class="form-control" id="data-recebimento">
-        </div>
-        <div class="col-md-4">
-            <label for="inputState" class="form-label">Tipo</label>
-            <select id="inputState" class="form-select">
-                <option value="vazio"></option>
-                <option value="carne">Carne</option>
-                <option value="frango">Frango</option>
-                <option value="peixe">Peixe</option>
-                <option value="porco">Porco</option>
-                <option value="carneiro">Carneiro</option>
-            </select>
-        </div>
-        <div class="col-md-4">
-            <label for="inputState" class="form-label">Fornecedor</label>
-            <select id="inputState" class="form-select">
-                <option value="vazio"></option>
-                <option value="fazenda-1">Fazenda 1</option>
-                <option value="fazenda-2">Fazenda 2</option>
-                <option value="fazenda-3">Fazenda 3</option>
-                <option value="best-beef">Best Beef</option>
-                <option value="sadia">Sadia</option>
-                <option value="seara">Seara</option>
-            </select>
-        </div>
-        <div class="col-md-4">
-            <label for="inputState" class="form-label">Estado do Produto</label>
-            <select id="inputState" class="form-select">
-                <option value="vazio"></option>
-                <option value="fresco">Fresco</option>
-                <option value="congelado">Congelado</option>
-            </select>
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-    </form>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
