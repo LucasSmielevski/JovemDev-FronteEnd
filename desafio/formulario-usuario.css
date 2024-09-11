@@ -1,7 +1,5 @@
-* {
-    padding: 0;
+.row{
     margin: 0;
-    height: 100%;
 }
 
 header {
@@ -13,28 +11,30 @@ h1 {
     margin-top: 15px;
 }
 
-.section {
+.section{
     display: flex;
 }
 
-.main-menu {
+.main-menu{
     display: flex;
     flex-direction: column;
-    width: 125px;
+    width: 180px;
     background-color: gray;
+    height: 100vh;
 }
 
-.main-menu button {
-    height: 15%;
+.main-menu button{
+    background-color: gray;
     width: 80%;
-    margin: 10px;
+    margin: 20px 10px 5px;
     padding: 10px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 3px 5px 5px 2px rgb(48, 48, 48);
     border: none;
+    color: white;
+    text-align: start;
 }
 
-.main-menu button:hover {
+.main-menu button:hover{
     background-color: rgb(184, 184, 184);
 }

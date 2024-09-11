@@ -1,0 +1,40 @@
+header {
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.section{
+    display: flex;
+}
+
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    background-color: gray;
+    height: 100vh;
+}
+
+.main-menu button{
+    background-color: gray;
+    width: 80%;
+    margin: 20px 10px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: start;
+    border: none;
+    color: white;
+}
+
+.main-menu button:hover{
+    background-color: rgb(184, 184, 184);
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+}

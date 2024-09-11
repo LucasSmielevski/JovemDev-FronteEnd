@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="formulario-usuario.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Produtos</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="main-menu">
+            <a href="formulario-produto.html"><button>Cadastro de produtos</button></a>
+            <a href="produtos.html"><button>Listagem de produtos</button></a>
+            <a href="formulario-usuario.html"><button>Cadastro de usuário</button></a>
+            <a href="usuarios.html"><button>Listagem de usuário</button></a>
+            <a href="menu.html"><button>Menu Principal</button></a>
+        </div>
+        <div class="content">
+            <h1>Cadastro de Usuário</h1>
+            <hr>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputNamel4" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="quantidade">
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress" class="form-label">Idade</label>
+                    <input type="number" class="form-control" id="codigo-barra">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputState" class="form-label">Estado Civil</label>
+                    <select id="inputState" class="form-select">
+                        <option value="vazio"></option>
+                        <option value="carne">Solteiro</option>
+                        <option value="frango">Casado</option>
+                        <option value="peixe">Divorciado</option>
+                        <option value="porco">Viúvo</option>
+                    </select>
+                </div>
+                <label for="inputAddress" class="form-label">Escolha o sexo:</label>
+                <div class="col-md-4">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Feminino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
