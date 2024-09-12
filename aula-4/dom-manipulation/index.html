@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="divVazia"></div>
+    <label class="label-topo">Label topo</label>
+    <div style="margin-left: 10px; display: flex; flex-direction: column;">
+        <form onsubmit="manipulando(event)" style="display: flex; flex-direction: column;">
+            <input type="text" id="nome" onkeyup="atualizaLabelInput()">
+            <label id="labelInput">1</label>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

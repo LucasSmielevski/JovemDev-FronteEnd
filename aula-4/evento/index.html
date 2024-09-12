@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scipt.js" defer></script>
+</head>
+<body>
+    <section style="display: flex; flex-direction: row;">
+        <div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" onclick="alerta()">
+                click
+            </div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" ondblclick="alerta()">
+                dblclick
+            </div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" onmouseover="alerta()">
+                onmouseover
+            </div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" onmouseout="alerta()">
+                onmouseout
+            </div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" onmousedown="alerta()">
+                onmousedown
+            </div>
+            <div style="height: 80px; width: 80px; border: 1px solid black;" onmouseup="alerta()">
+                onmouseup
+            </div>
+        </div>
+        <div style="margin-left: 10px; display: flex; flex-direction: column;">
+            keydown
+            <input type="text" style="height: 80px; width: 80px; border: 1px solid black;" onkeydown="alerta()">
+            keyup
+            <input type="text" style="height: 80px; width: 80px; border: 1px solid black;" onkeyup="alerta()">
+            keypress
+            <input type="text" style="height: 80px; width: 80px; border: 1px solid black;" onkeypress="alerta()">
+        </div>
+        <div style="margin-left: 10px; display: flex; flex-direction: column;">
+            <form onsubmit="teste(event)" style="display: flex; flex-direction: column;">
+                <input type="text" onfocus="loga()">
+                <input type="text" onfocus="loga()">
+                <select name="" id="" onchange="alerta()">
+                    <option value="">a</option>
+                    <option value="">b</option>
+                    <option value="">c</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    background-color: rgb(30, 0, 70);
+    color: aliceblue;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#inputTarefa {
+    background-color: aliceblue;
+    color: black;
+    width: 50%;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.botaoAdicionar {
+    margin-top: 10px;
+    width: 110px;
+}
+
+#btAdicionar{
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    border-color: aliceblue;
+    box-shadow: 1px 1px 3px 1px rgb(235, 235, 235);
+    background-color: green;
+}
+
+#btAdicionar:hover{
+    background-color: rgb(2, 165, 24);
+}
+
+#btnLimparConcluidos{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border-color: aliceblue;
+    box-shadow: 1px 1px 3px 1px rgb(235, 235, 235);
+    background-color: rgb(185, 53, 0);
+}
+
+.btn-Remover{
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px;
+    width: 12%;
+}
+.labelConcluido{
+    margin-left: 8px;
+}
