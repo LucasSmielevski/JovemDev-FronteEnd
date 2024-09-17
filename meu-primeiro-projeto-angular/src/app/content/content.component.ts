@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './content.component.scss'
 })
 export class ContentComponent {
+  valorInput = "";
 
+  meuMetodo(){
+    alert("Olá")
+  }
 }

@@ -1,0 +1,11 @@
+<div>
+  <form action="">
+    <input type="text" name="nome" [(ngModel)] = "valorNome">
+    {{valorNome}}
+    <input type="email" name="email" [(ngModel)] = "valorEmail">
+    {{valorEmail}}
+    <input type="text" name="telefone" [(ngModel)] = "valorTelefone">
+    {{valorTelefone}}
+    <button (click)="meuMetodo()">Enviar</button>
+  </form>
+</div>

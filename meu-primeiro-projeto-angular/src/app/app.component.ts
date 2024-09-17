@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'meu-primeiro-projeto-angular';
+
+  // trocarTitulo(titulo : string){
+  //   this.title = titulo;
+  // }
+
+  printarCampo(pesquisa : string){
+    alert(pesquisa)
+  }
+
+  clientes = [
+    {nome : "Lucas"},
+    {nome : "Lucas"},
+    {nome : "Lucas"},
+    {nome : "Lucas"}
+  ]
 }

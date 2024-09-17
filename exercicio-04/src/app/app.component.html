@@ -1,0 +1,7 @@
+<app-formulario-cliente (adicionarCliente)="adicionarCliente($event)"></app-formulario-cliente>
+
+<app-lista-clientes
+[clientes]="clientes"
+(clienteEditar)="editarCliente($event)"
+(clienteExcluir)="excluirCliente($event)"
+></app-lista-clientes>

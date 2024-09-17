@@ -8,36 +8,17 @@ div{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  height: fit-content;
 }
 
 .div-1 {
   background-color: aqua;
 }
 
-.div-2 {
-  background-color: red;
+button{
+  height: fit-content;
 }
 
-.div-3 {
-  background-color: purple;
-}
-
-.div-4 {
-  background-color: chartreuse;
-}
-
-.div-5 {
-  background-color: blue;
-}
-
-.div-6 {
-  background-color: red;
-}
-
-.div-7 {
-  background-color: purple;
-}
-
-.div-8 {
-  background-color: chartreuse;
+input{
+  height: fit-content;
 }

@@ -1,4 +1,27 @@
-<app-cabecalho/>
+<app-cabecalho [tituloDoPai] = "title" (pesquisaEvent)="printarCampo($event)"/>
+<!-- [tituloDoPai] = "title" (trocarTituloEvent)="trocarTitulo($event)" -->
 
-<app-content/>
+<app-content />
+
+<div style="height: fit-content;" *ngIf="clientes.length > 0; else elseBlock">Clientes</div>
+
+<ng-template #elseBlock>
+  <div>Não há clientes</div>
+</ng-template>
+
+<div style="height: fit-content;" *ngFor="let cliente of clientes">
+  {{cliente.nome}}
+</div>
+
+<table style="height: fit-content;" border>
+  <tr>
+    <th>nome</th>
+  </tr>
+  <tr *ngFor="let cliente of clientes">
+    {{cliente.nome}}
+  </tr>
+</table>
+
+
+
 
