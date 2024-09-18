@@ -1,3 +1,4 @@
+import { Cliente } from './models/cliente';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,13 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'exercicio-04';
 
-  clientes : any[] = [];
+  clientes : Cliente[] = [];
   clienteEditado : any = null;
 
   adicionarCliente( cliente: any){
     if(this.clienteEditado){
       const index = this.clientes.findIndex(c => c === this.clienteEditado);
-      console.log(index)
       this.clientes[index] = cliente
       this.clienteEditado = null;
     }else{

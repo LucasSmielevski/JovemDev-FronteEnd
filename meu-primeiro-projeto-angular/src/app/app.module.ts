@@ -8,12 +8,14 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { ContentComponent } from './content/content.component';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponenteComponent,
     CabecalhoComponent,
-    ContentComponent
+    ContentComponent,
+    
   ],
   imports: [
     BrowserModule,
