@@ -1,0 +1,146 @@
+ul, a ,h3{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  padding: 20px;
+  background-color: rgb(6, 3, 202);
+  height: 25px;
+}
+
+img{
+  height: 50px;
+  margin-top: -12px;
+}
+
+
+/* LAYOUt */
+
+body {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-row: 1fr;
+  grid-template-areas: 'containerMenu content';
+}
+
+.container-menu {
+  background-color: rgb(42, 137, 247);
+  grid-area: containerMenu;
+}
+
+.content {
+  grid-area: content;
+}
+
+/* FIM LAYOUT */
+
+/* MENU */
+
+nav ul {
+  margin: 5px;
+  list-style: none;
+  height: fit-content;
+}
+
+nav ul li {
+  margin: 10px;
+  height: fit-content;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: ubuntu;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.is-active{
+  color: black !important;
+}
+
+.logo {
+  height: 40px;
+  margin: 10px;
+}
+
+/* DASHBOARD */
+
+.content {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr;
+  grid-template-areas:
+  'div1 div1 div1 div1'
+  ;
+  gap: 3px;
+}
+
+div {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+div h1 {
+  height: fit-content;
+}
+div p {
+  height: fit-content;
+}
+
+.div1 {
+  grid-area: div1;
+}
+
+.div2 {
+  grid-area: div2;
+  overflow: hidden;
+}
+
+.div3 {
+  grid-area: div3;
+  display: flex;
+  flex-direction: column;
+}
+
+.div4 {
+  grid-area: div4;
+  display: flex;
+  flex-direction: column;
+}
+
+.div5 {
+  grid-area: div5;
+}
+
+.div6 {
+  grid-area: div6;
+}
+
+.div7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: div7;
+}
+
+.div7 a {
+  height: fit-content;
+}
+
+img {
+  height: 50%;
+  width: 50%
+}

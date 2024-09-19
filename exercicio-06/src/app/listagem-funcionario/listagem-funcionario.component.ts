@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Funcionario } from '../models/funcionario';
 
 @Component({
   selector: 'app-listagem-funcionario',
@@ -12,7 +13,8 @@ export class ListagemFuncionarioComponent {
   @Output() clienteEditar = new EventEmitter<any>();
   @Output() clienteExcluir = new EventEmitter<any>();
 
-  editarCliente(funcionario : any){
+  editarCliente(funcionario : Funcionario){
+    this.route.navigateByUrl(`funcionario/cadastro/${funcionario.id}`)
     this.clienteEditar.emit(funcionario)
   }
 
@@ -24,6 +26,6 @@ export class ListagemFuncionarioComponent {
   }
 
   editarFuncionario(){
-    this.route.navigate(["/funcionario/cadastro/id"])
+    this.route.navigate(["/funcionario/cadastro/2"])
   }
 }

@@ -1,0 +1,28 @@
+<header class="header">
+  <h3>Gerenciamento de Usuário e Produto</h3>
+</header>
+<body>
+  <nav class="container-menu">
+    <img src="" alt="Logo" class="logo">
+    <ul>
+        <li>
+            <a [routerLink]="['/usuario/cadastro']" [routerLinkActive]="'is-active'">Cadastro Usuario</a>
+        </li>
+        <li>
+            <a [routerLink]="['/usuario/listagem']"[routerLinkActive]="'is-active'">Listagem Usuario</a>
+        </li>
+        <li>
+          <a [routerLink]="['/produto/cadastro']"[routerLinkActive]="'is-active'">Cadastro Produto</a>
+      </li>
+      <li>
+          <a [routerLink]="['/produto/listagem']"[routerLinkActive]="'is-active'">Listagem Produto</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="content">
+    <div class="div1">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</body>
+
