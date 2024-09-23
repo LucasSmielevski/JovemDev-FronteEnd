@@ -1,7 +1,7 @@
 <div class="div1">
-  <form action="">
-    <input type="text" placeholder="nome" name="nome" [(ngModel)] = "valueNome" required>
-    <input type="number" placeholder="email" name="email" [(ngModel)] = "valueEmail" required>
-    <button>Cadastrar</button>
+  <form [formGroup]="form" (submit)="cadastrar()" action="">
+    <input type="text" placeholder="nome" name="nome" formControlName="nome">
+    <input type="email" placeholder="email" name="email" formControlName="email">
+    <button [disabled]="!this.form.valid" type="submit">Cadastrar</button>
   </form>
 </div>

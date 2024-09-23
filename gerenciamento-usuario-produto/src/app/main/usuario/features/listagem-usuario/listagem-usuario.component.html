@@ -5,13 +5,13 @@
     <th>email</th>
     <th>ações</th>
   </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
+  <tr *ngFor="let usuario of usuarios">
+    <td><p>{{usuario.id}}</p></td>
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
     <td>
-      <button>Editar</button>
-      <button>Excluir</button>
+      <button (click)="editarUsuario(usuario)">Editar</button>
+      <button (click)="excluirUsuario(usuario.id)">Excluir</button>
     </td>
   </tr>
 </table>

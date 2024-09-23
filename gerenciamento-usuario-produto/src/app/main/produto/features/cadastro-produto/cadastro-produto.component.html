@@ -1,8 +1,11 @@
 <div class="div1">
-  <form action="">
-    <input type="text" placeholder="nome" name="nome" [(ngModel)] = "valueNome" required>
-    <input type="number" placeholder="preço" name="preco" [(ngModel)] = "valuePreco" required>
-    <button>Enviar</button>
+  <form [formGroup]="form" (submit)="cadastrar()" action="">
+    <input type="text" placeholder="nome" name="nome" formControlName="name" required>
+    <input type="number" placeholder="preço" name="preco" formControlName="estoque" required>
+    <div *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+      Nome Obrigatorio
+    </div>
+    {{this.form.get('estoque')?.hasError('estoqueMinimo')}}
+    <button [disabled]="!this.form.valid" type="submit">Enviar</button>
   </form>
 </div>
-

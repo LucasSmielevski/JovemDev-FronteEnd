@@ -8,7 +8,8 @@ const routes: Routes = [
   {path : "usuario" , component : UsuarioComponent,
     children : [
       {path : "listagem", component : ListagemUsuarioComponent},
-      {path : "cadastro" , component : CadastroUsuarioComponent}
+      {path : "cadastro" , component : CadastroUsuarioComponent},
+      {path : "cadastro/:id" , component : CadastroUsuarioComponent}
     ]
   }
 ];
