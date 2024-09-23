@@ -48,7 +48,7 @@ export class CadastroUsuarioComponent {
   cadastrar() {
     const usuarioCadastro = this.form.getRawValue();
     if (usuarioCadastro.id || usuarioCadastro.id == 0) {
-      
+
     } else {
       if (this.form.valid) {
         this.usuarioService.addUsuario(this.form.getRawValue());

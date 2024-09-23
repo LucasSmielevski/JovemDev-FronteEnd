@@ -21,7 +21,16 @@ export class UsuarioService {
   }
 
   editarUsuario(usuarioCadastro: Usuario){
-    this.usuarios.forEach(usuario => ())
+    this.usuarios.forEach(usuario => {
+      if(usuario.id === usuarioCadastro.id){
+        usuario.nome = usuarioCadastro.nome
+        usuario.email = usuarioCadastro.email
+      }
+    })
+  }
+
+  excluirUsuario(id : Number){
+    return this.usuarios = this.usuarios.filter(usuario => usuario.id != id)
   }
 
   getList(){
