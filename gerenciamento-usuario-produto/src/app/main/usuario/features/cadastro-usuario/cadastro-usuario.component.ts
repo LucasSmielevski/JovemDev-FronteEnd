@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UsuarioService } from '../../services/usuario.service';
 import { ActivatedRoute } from '@angular/router';
 import { Usuario } from '../../models/usuario';
+import { Subscription, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cadastro-usuario',
   templateUrl: './cadastro-usuario.component.html',
   styleUrl: './cadastro-usuario.component.scss',
 })
-export class CadastroUsuarioComponent {
+export class CadastroUsuarioComponent implements OnInit {
   form!: FormGroup;
   posts: any;
   user?: Usuario;
+
+  subs?: Array<Subscription> = [];
 
   constructor(
     private formbuilder: FormBuilder,
@@ -29,7 +32,6 @@ export class CadastroUsuarioComponent {
     if (this.user) {
       this.form.patchValue(this.user);
     }
-    // this.form.patchValue({name: "Lucas", estoque: 10})
   }
 
   buildForm() {
@@ -47,8 +49,10 @@ export class CadastroUsuarioComponent {
 
   cadastrar() {
     const usuarioCadastro = this.form.getRawValue();
+    usuarioCadastro.id = this.user?.id;
     if (usuarioCadastro.id || usuarioCadastro.id == 0) {
-
+      this.usuarioService.editarUsuario(usuarioCadastro);
+      this.form.reset();
     } else {
       if (this.form.valid) {
         this.usuarioService.addUsuario(this.form.getRawValue());

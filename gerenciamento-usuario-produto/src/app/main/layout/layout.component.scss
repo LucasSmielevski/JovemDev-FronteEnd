@@ -6,11 +6,24 @@ ul, a ,h3{
 
 .header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-size: x-large;
   padding: 20px;
   background-color: rgb(6, 3, 202);
-  height: 25px;
+  height: 65px;
+}
+
+#carrinho{
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+#carrinho i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img{

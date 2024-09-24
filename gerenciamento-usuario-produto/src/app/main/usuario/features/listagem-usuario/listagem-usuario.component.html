@@ -10,8 +10,8 @@
     <td>{{usuario.nome}}</td>
     <td>{{usuario.email}}</td>
     <td>
-      <button (click)="editarUsuario(usuario)">Editar</button>
-      <button (click)="excluirUsuario(usuario.id)">Excluir</button>
+      <button (click)="editarUsuario(usuario)"><i class="pi pi-pencil"></i></button>
+      <button (click)="excluirUsuario(usuario.id)" id="excluir"><i class="pi pi-trash"></i></button>
     </td>
   </tr>
 </table>
