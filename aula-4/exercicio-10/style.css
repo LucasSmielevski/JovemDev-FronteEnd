@@ -1,56 +1,95 @@
-*{
-    background-color: rgb(30, 0, 70);
-    color: aliceblue;
-}
-
-section {
+body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #29005c;
+    color: white;
 }
 
-#inputTarefa {
-    background-color: aliceblue;
-    color: black;
-    width: 50%;
-    border-radius: 15px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.botaoAdicionar {
-    margin-top: 10px;
-    width: 110px;
-}
-
-#btAdicionar{
+header {
+    position: fixed;
+    top: 0;
     width: 100%;
-    border-radius: 15px;
+    background-color: #29005c;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+    background-color: hsla(267, 100%, 26%, 0.282);
+    box-shadow: 8px 8px 8px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 120px);
     padding: 10px;
-    border-color: aliceblue;
-    box-shadow: 1px 1px 3px 1px rgb(235, 235, 235);
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnLimparConcluidas{
+    background-color: red;
+}
+
+#btnLimparConcluidas:hover{
+    background-color: rgb(181, 2, 2);
+}
+
+#btnAdicionarTarefa{
+    background-color: rgb(0, 165, 0);
+}
+
+#btnAdicionarTarefa:hover{
     background-color: green;
-}
-
-#btAdicionar:hover{
-    background-color: rgb(2, 165, 24);
-}
-
-#btnLimparConcluidos{
-    margin-top: 10px;
-    margin-left: 10px;
-    border-radius: 15px;
-    padding: 10px;
-    border-color: aliceblue;
-    box-shadow: 1px 1px 3px 1px rgb(235, 235, 235);
-    background-color: rgb(185, 53, 0);
 }
 
 .btn-Remover{
     background-color: red;
-    border-radius: 15px;
-    padding: 5px;
-    width: 12%;
 }
-.labelConcluido{
-    margin-left: 8px;
+
+.task-counter {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: green;
+}
+
+.checkbox {
+    margin-right: 10px;
 }
