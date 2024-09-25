@@ -1,0 +1,41 @@
+header{
+  background-color: tomato;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+header ul li{
+  margin-left: 10px;
+  color: white;
+}
+
+header h1 {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul li a:hover {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.ativa{
+  font-weight: bold;
+  color: dodgerblue !important;
+}

@@ -1,0 +1,11 @@
+<div class="div1">
+  <form [formGroup]="form" (submit)="cadastrar()" action="">
+    <input type="text" placeholder="nome" name="nome" formControlName="name" required>
+    <input type="number" placeholder="preço" name="preco" formControlName="estoque" required>
+    <div *ngIf="form.get('name')?.errors?.['required'] && form.get('name')?.touched">
+      Nome Obrigatorio
+    </div>
+    {{this.form.get('estoque')?.hasError('estoqueMinimo')}}
+    <button [disabled]="!this.form.valid" type="submit">Enviar</button>
+  </form>
+</div>

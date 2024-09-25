@@ -1,0 +1,8 @@
+<div class="div1">
+  <form [formGroup]="form" (submit)="cadastrar()" action="">
+    <h3>Cadastro Usuário</h3>
+    <input type="text" placeholder="nome" name="nome" formControlName="nome">
+    <input type="email" placeholder="email" name="email" formControlName="email">
+    <button [disabled]="!this.form.valid" type="submit">Cadastrar</button>
+  </form>
+</div>

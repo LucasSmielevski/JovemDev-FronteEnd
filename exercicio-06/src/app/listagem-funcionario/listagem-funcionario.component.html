@@ -1,0 +1,18 @@
+<table  border>
+  <tr>
+    <th>nome</th>
+    <th>idade</th>
+    <th>ações</th>
+  </tr>
+  <tr *ngFor="let funcionario of funcionarios">
+    <td>{{funcionario.nome}}</td>
+    <td>{{funcionario.email}}</td>
+    <td>
+      <button (click)="editarCliente(funcionario)">Editar</button>
+      <button (click)="excluirCliente(funcionario)">Excluir</button>
+    </td>
+  </tr>
+</table>
+<button (click)="editarFuncionario()">Editar</button>
+
+<!-- *ngIf="clientes.length > 0" -->

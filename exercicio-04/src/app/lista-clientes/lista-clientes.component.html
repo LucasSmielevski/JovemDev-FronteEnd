@@ -1,0 +1,17 @@
+<table  border>
+  <tr>
+    <th>nome</th>
+    <th>idade</th>
+    <th>ações</th>
+  </tr>
+  <tr *ngFor="let cliente of clientes">
+    <td>{{cliente.nome}}</td>
+    <td>{{cliente.idade}}</td>
+    <td>
+      <button (click)="editarCliente(cliente)">Editar</button>
+      <button (click)="excluirCliente(cliente)">Excluir</button>
+    </td>
+  </tr>
+</table>
+
+<!-- *ngIf="clientes.length > 0" -->

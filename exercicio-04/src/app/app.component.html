@@ -1,0 +1,19 @@
+<!-- <app-formulario-cliente [clienteEdicao]="clienteEditado" (adicionarCliente)="adicionarCliente($event)"></app-formulario-cliente>
+
+<app-lista-clientes
+[clientes]="clientes"
+(clienteEditar)="editarCliente($event)"
+(clienteExcluir)="excluirCliente($event)"
+></app-lista-clientes> -->
+
+<header>
+  <ul>
+    <li><a routerLink="/formulario" routerLinkActive="ativa">Formulario</a></li>
+    <li><a routerLink="/clientes" routerLinkActive="ativa">Listagem</a></li>
+  </ul>
+  <h1>
+    Titulo
+  </h1>
+</header>
+<router-outlet></router-outlet>
+

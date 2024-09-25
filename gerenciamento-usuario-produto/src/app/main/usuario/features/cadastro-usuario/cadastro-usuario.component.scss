@@ -1,0 +1,28 @@
+input{
+  height: fit-content;
+}
+button{
+  height: fit-content;
+}
+
+.div1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 120%;
+  height: 50%;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h3{
+  height: fit-content;
+  margin-bottom: 20%;
+}

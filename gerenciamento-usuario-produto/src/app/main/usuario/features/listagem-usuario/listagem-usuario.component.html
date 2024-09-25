@@ -1,0 +1,17 @@
+<table border>
+  <tr>
+    <th>id</th>
+    <th>nome</th>
+    <th>email</th>
+    <th>ações</th>
+  </tr>
+  <tr *ngFor="let usuario of usuarios">
+    <td><p>{{usuario.id}}</p></td>
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
+    <td>
+      <button (click)="editarUsuario(usuario)"><i class="pi pi-pencil"></i></button>
+      <button (click)="excluirUsuario(usuario.id)" id="excluir"><i class="pi pi-trash"></i></button>
+    </td>
+  </tr>
+</table>

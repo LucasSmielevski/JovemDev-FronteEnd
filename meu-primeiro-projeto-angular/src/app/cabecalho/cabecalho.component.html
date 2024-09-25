@@ -1,0 +1,20 @@
+<header class="header">
+  <nav>
+      <ul class="menu">
+          <li>
+              <a href="">Hello world </a>
+          </li>
+          <li>
+              <a [href]="meuLink">Hello world</a>
+          </li>
+      </ul>
+      <!-- <button (click)="trocarTitulo()">Trocar Titulo</button> -->
+  </nav>
+  <h3>{{tituloDoPai}}</h3>
+  <div>
+    <input type="text" (blur)="printarCampo()" [(ngModel)] = "valorInput">
+    <button (click)="printarCampo()">Pesquisar</button>
+  </div>
+  <img src="../../assets/logo.jpg" alt="Logo">
+</header>
+
