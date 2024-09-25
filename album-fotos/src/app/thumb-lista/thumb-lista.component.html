@@ -1,10 +1,9 @@
 <div class="thumbnail-container">
     <div *ngFor="let album of albums">
-      <img 
-        [src]="album.thumbnailUrl" 
-        [alt]="album.title" 
-        (click)="clicarAlbum(album.albumId)" 
-        class="thumbnail"
-      />
+      <button (click)="clicarAlbum(album.id)" class="thumbnail">
+        <p>Álbum: {{album.id}}</p>
+        <p>{{album.title}}</p>
+        <img [src]="album.thumbnail" alt="">
+      </button>
     </div>
   </div>

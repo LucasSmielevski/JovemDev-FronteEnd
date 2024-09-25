@@ -38,9 +38,9 @@ export class ListagemUsuarioComponent implements OnInit, OnDestroy {
 
     // Assinando a contagem de usuários e armazenando na lista
     const countSubscription = this.service.usuarioCount$.subscribe((count) => {
-      this.usuarioCount = count; // Atualiza a contagem
+      this.usuarioCount = count;
     });
-    this.subs?.push(countSubscription); // Adiciona à lista de subscriçõe
+    this.subs?.push(countSubscription);
   }
 
   emitValue() {

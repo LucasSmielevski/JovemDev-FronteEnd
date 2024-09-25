@@ -18,6 +18,11 @@ export class ThumbListaComponent implements OnInit {
   ngOnInit(): void {
     this.albumService.buscarAlbums().subscribe(valores => {
       this.albums = valores;
+      this.albums.forEach(album => {
+        this.albumService.buscarFotosByAlbum(album.id).subscribe(fotos => {
+          album.thumbnail = fotos.length > 0 ? fotos[0].thumbnailUrl : 'nada';
+        });
+      });
     });
   }
 

@@ -1,6 +1,6 @@
-<div class="photo-container">
-    <div *ngFor="let foto of fotos">
-      <img [src]="foto.url" [alt]="foto.title" class="foto" />
-    </div>
+<div class="foto-container">
+  <div *ngFor="let foto of fotos" class="divFoto">
+    <img [src]="foto.url" [alt]="foto.title" class="foto">
+    <p>{{foto.title}}</p>
   </div>
-  
+</div>

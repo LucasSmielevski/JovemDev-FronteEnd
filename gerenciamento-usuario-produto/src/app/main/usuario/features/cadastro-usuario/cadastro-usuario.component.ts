@@ -15,8 +15,6 @@ export class CadastroUsuarioComponent implements OnInit {
   posts: any;
   user?: Usuario;
 
-  subs?: Array<Subscription> = [];
-
   constructor(
     private formbuilder: FormBuilder,
     private usuarioService: UsuarioService,

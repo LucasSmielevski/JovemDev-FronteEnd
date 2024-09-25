@@ -8,14 +8,16 @@ import { Observable, take } from 'rxjs';
 export class AlbumFotosService {
 
   private apiUrl = 'https://jsonplaceholder.typicode.com/photos';
+  private albumUrl = 'https://jsonplaceholder.typicode.com/albums'
+
 
   constructor(private http: HttpClient) {}
 
-  buscarAlbums(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+  buscarAlbums() {
+    return this.http.get<Array<any>>(this.albumUrl);
   }
 
-  buscarFotosByAlbum(albumId: number): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl, {params : {albumId : albumId.toString()}}).pipe(take(1));
+  buscarFotosByAlbum(albumId: number) {
+    return this.http.get<Array<any>>(this.apiUrl, {params : {albumId : albumId.toString()}}).pipe(take(1));
   }
 }
